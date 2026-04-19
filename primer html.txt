@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rescate Animal - Transformando el abandono en esperanza</title> />
+</head>
+<body>
+
+    <header>
+        <h1>Rescate Animal</h1>
+        <p>Transformando el abandono en esperanza</p>
+        
+        <nav>
+            <ul style="list-style: none; display: flex; gap: 20px;">
+                <li><a href="#mision">Misión</a></li>
+                <li><a href="#impacto">Impacto</a></li>
+                <li><a href="#ayudar">Cómo Ayudar</a></li>
+                <li><a href="#adopciones">Adopciones</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="emergencia">
+            <a href="https://www.whatsapp.com/?lang=es" target="_blank" style="background-color: red; color: white; padding: 20px; text-decoration: none; font-weight: bold; display: inline-block;">
+                REPORTAR UNA EMERGENCIA (aca pondriamos un whatsapp o algo)
+            </a>
+        </section>
+
+        <section id="mision">
+            <h2>Nuestra Misión</h2>
+            <p>
+                Soñamos con una ciudad donde cada animal tenga un lugar seguro. Nuestra misión es transformar 
+                el abandono en esperanza, con rescates, cuidados y adopciones responsables que llenen de 
+                alegría tanto a los peludos como a las personas que los reciben.
+            </p>
+        </section>
+
+        <section id="impacto">
+            <h2>Nuestro Impacto</h2>
+            <div class="carousel-placeholder">
+                <p>Historias, estadísticas y fotos de nuestros rescates.</p>
+                </div>
+        </section>
+
+        <section id="adopciones">
+            <h2>Animales en adopción</h2>
+            <div class="galeria">
+                <article>
+                    <img src="" alt="Ponemos una imagen aca de unos animales" width="200" />
+                    <h3>Gatitos</h3>
+                    <a href="#">Llenar formulario de adopción</a>
+                </article>
+                </div>
+        </section>
+
+        <section id="ayudar">
+            <h2>Cómo ayudar</h2>
+            
+            <article>
+                <h3>Donaciones Económicas</h3>
+                <p>Alias: aca ponemos un alias | PayPal |</p>
+            </article>
+
+            <article>
+                <h3>Donaciones Físicas</h3>
+                <p>Recibimos mantas, toallas, camitas, juguetes, comida y medicamentos en nuestro Shelter Principal.</p>
+            </article>
+
+            <article>
+                <h3>Participa</h3>
+                <ul>
+                    <li><a href="#">Formulario para Voluntariado</a></li>
+                    <li><a href="#">Formulario para Casa de Tránsito</a></li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+</body>
+</html>
