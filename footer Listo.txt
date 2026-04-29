@@ -1,0 +1,63 @@
+<style>
+    footer {
+        background-color: #4b2c20;
+        color: #ffffff;
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    footer p {
+        margin-bottom: 30px;
+    }
+
+    footer table {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        border-collapse: collapse;
+    }
+
+    footer table th {
+        color: #ffffff;
+        font-size: 1.2rem;
+        padding-bottom: 15px;
+    }
+
+    footer table td a {
+        color: #ffcc00;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    footer .copyright {
+        margin-top: 50px;
+        font-size: 0.85rem;
+        opacity: 0.7;
+        border-top: 1px solid rgba(255,255,255,0.1);
+        padding-top: 20px;
+    }
+</style>
+
+
+<footer>
+    <section>
+        <p><i>Somos Ana, Ivan, Vero y Alexis, unidos por el bienestar animal y la adopción responsable.</i></p>
+        <table border="0" width="100%">
+        <tr>
+            <th align="center">Contactanos!</th>
+            <th align="center">Ayudanos!</th>
+            <th align="center">Quienes somos!</th>
+        </tr>
+        <tr>
+            <td align="center"><a href="tel:+541160323719" target="_blank">Llamanos!</a></td>
+            <td align="center"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfOzJ3SnIqSNFe_d19kwU7NZC8qhX_aFojEnTB_gT3AuYFnnQ/viewform?usp=header" target="_blank">Sé Voluntario!</a></td>
+            <td align="center"><a href="https://www.instagram.com/patitas.unidas.ong.unahur/" target="_blank">Nuestro Instagram!</a></td>
+        </tr>
+        <tr>
+            <td align="center"><a href="mailto:patitasunidas.ong.unahur@gmail.com" target="_blank">Mandanos un mail!</a></td>
+            <td align="center"><a href="https://docs.google.com/forms/d/e/1FAIpQLScnLSE344XA-v23SpIav40jq9DlFRYUfHbHAe1RZPkIDdU1UQ/viewform" target="_blank">Adoptá!</a></td>
+        </tr>
+        </table>
+        <p> <small>© 2026 Patitas Unidas – Todos los derechos reservados.</small></p>
+    </section>
+</footer>
