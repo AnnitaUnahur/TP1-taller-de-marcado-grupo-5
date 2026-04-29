@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patitas Unidas - Unidas por aquellos que no tienen voz</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f0f0f0;
+            background-image: url('fondos/fondo.png');
+            background-attachment: fixed;
+            background-repeat: repeat;
+        }
+
+        .navbar {
+            background-color: white;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar img {
+            height: 80px;
+            width: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #555;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #007BFF;
+            border-bottom: 2px solid #007BFF;
+        }
+
+        .main-container {
+            max-width: 1100px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            text-align: center;
+            min-height: 100vh;
+        }
+
+        header {
+            margin-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo-central {
+            width: 280px;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        #emergencia {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+
+        #emergencia a {
+            background-color: red;
+            color: white;
+            padding: 20px 40px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            display: inline-block;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        .slider-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            max-width: 900px;
+        }
+
+        .galeria-scroll {
+            display: flex;
+            gap: 15px;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            padding: 10px;
+        }
+
+        .galeria-scroll::-webkit-scrollbar {
+            height: 6px;
+        }
+        .galeria-scroll::-webkit-scrollbar-thumb {
+            background: #ccc;
+            border-radius: 10px;
+        }
+
+        .galeria-scroll img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            flex-shrink: 0;
+        }
+
+        footer {
+            background-color: #4b2c20;
+            color: #ffffff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 30px;
+        }
+
+        footer table {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        footer table th {
+            color: #ffffff;
+            font-size: 1.2rem;
+            padding-bottom: 15px;
+        }
+
+        footer table td a {
+            color: #ffcc00;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        footer .copyright {
+            margin-top: 50px;
+            font-size: 0.85rem;
+            opacity: 0.7;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <img src="Logos/patitas_logo.png" alt="Logotipo de la barra de navegación">
+        <div class="nav-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#mision">Quiénes somos</a>
+            <a href="#impacto">Qué hacemos</a>
+            <a href="#adopciones">Adopta</a>
+            <a href="#ayudar">Apóyanos</a>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <header id="inicio">
+            <h1>Patitas Unidas</h1>
+            <img src="Logos/patitas_logo.png" alt="Logotipo central de Patitas Unidas" class="logo-central">
+            <p>Unidas por aquellos que no tienen voz</p>
+        </header>
+
+        <main>
+            <section id="emergencia">
+                <a href="https://wa.me/1160323719" target="_blank">
+                    REPORTAR UNA EMERGENCIA <br>
+                    1160323719
+                </a>
+            </section>
+
+            <section id="mision">
+                <h2>Nuestra Misión</h2>
+                <p><i>En Patitas Unidas estamos unidos por el deseo de que cada animalito tenga un hogar, una familia y un lugar feliz. Trabajamos para transformar el abandono en cuidado y compañía.</i></p>
+            </section>
+
+            <section id="impacto">
+                <h2>Nuestro Impacto</h2>
+                <div class="slider-container">
+                    <div class="galeria-scroll" id="impacto-scroll">
+                        <img src="imagenes/impacto1.jpg" alt="Perro rescatado feliz">
+                        <img src="imagenes/impacto2.jpg" alt="Gatito en recuperación">
+                        <img src="imagenes/impacto3.jpg" alt="Voluntarios trabajando">
+                        <img src="imagenes/impacto4.jpg" alt="Perro recibiendo cariño">
+                        <img src="imagenes/impacto5.jpg" alt="Momento del rescate">
+                        <img src="imagenes/impacto6.jpg" alt="Animales">
+                        <img src="imagenes/impacto7.jpg" alt="Perro jugando">
+                        <img src="imagenes/impacto8.jpg" alt="Gato en su nueva casa">
+                        <img src="imagenes/impacto9.jpg" alt="Atención veterinaria">
+                        <img src="imagenes/impacto10.jpg" alt="Perro descansando tranquilo">
+                        <img src="imagenes/impacto11.jpg" alt="Entrega de donaciones">
+                        <img src="imagenes/impacto12.jpg" alt="Cachorros">
+                        <img src="imagenes/impacto13.jpg" alt="Momento de una adopción">
+                    </div>
+                </div>
+            </section>
+
+            <section id="adopciones">
+                <h2>Animales en adopción</h2>
+                <div class="slider-container">
+                    <div class="galeria-scroll" id="adopcion-scroll">
+                        <img src="imagenes/Candidatos/1.jpg" alt="Perro buscando hogar">
+                        <img src="imagenes/Candidatos/2.jpg" alt="Gatito joven para adoptar">
+                        <img src="imagenes/Candidatos/3.jpg" alt="Perro blanco y negro">
+                        <img src="imagenes/Candidatos/4.jpg" alt="Perro adulto">
+                        <img src="imagenes/Candidatos/5.jpg" alt="Gato naranja para adopción">
+                        <img src="imagenes/Candidatos/6.jpg" alt="Perro pequeño">
+                        <img src="imagenes/Candidatos/7.jpg" alt="Gatito gris">
+                    </div>
+                </div>
+                <p>
+                    <a href="https://docs.google.com/forms/d/1f9OaPMTJk3n1CnyjrkrRpbYMM29wqykh7zvm1LiVQJw/edit" 
+                       target="_blank" 
+                       style="color: #007BFF; font-weight: bold; text-decoration: none;">
+                       Llenar formulario de adopción
+                    </a>
+                </p>
+            </section>
+
+            <section id="ayudar">
+                <h2>Cómo ayudar</h2>
+                <p>Alias: <strong>patitas.unidas</strong> | PayPal</p>
+                <p>Recibimos mantas, camitas y comida en nuestro Shelter Principal.</p>
+                <p>
+                    <a href="https://docs.google.com/forms/d/1VIsZzx7vKZcyrKj72yHl2uC1Qu29F0RQM8571aqa4l0/edit" 
+                       target="_blank" 
+                       style="color: #007BFF; font-weight: bold; text-decoration: none;">
+                       Formulario para Voluntariado
+                    </a>
+                </p>
+            </section>
+        </main>
+    </div>
+
+<footer>
+    <section>
+        <p><i>Somos Ana, Ivan, Vero y Alexis, unidos por el bienestar animal y la adopción responsable.</i></p>
+        <table>
+        <thead>
+        <tr>
+            <th>Contactanos!</th>
+            <th>Ayudanos!</th>
+            <th>Quienes somos!</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><a href="tel:+541160323719">Llamanos!</a></td>
+            <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSfOzJ3SnIqSNFe_d19kwU7NZC8qhX_aFojEnTB_gT3AuYFnnQ/viewform?usp=header" target="_blank" rel="noopener noreferrer">Sé Voluntario!</a></td>
+            <td><a href="https://www.instagram.com/patitas.unidas.ong.unahur/" target="_blank" rel="noopener noreferrer">Nuestro Instagram!</a></td>
+        </tr>
+        <tr>
+            <td><a href="mailto:patitasunidas.ong.unahur@gmail.com">Mandanos un mail!</a></td>
+            <td><a href="https://docs.google.com/forms/d/e/1FAIpQLScnLSE344XA-v23SpIav40jq9DlFRYUfHbHAe1RZPkIDdU1UQ/viewform" target="_blank" rel="noopener noreferrer">Adoptá!</a></td>
+            <td></td>
+        </tr>
+        </tbody>
+        </table>
+        <div class="copyright">
+            <p>© 2026 Patitas Unidas – Todos los derechos reservados.</p>
+        </div>
+    </section>
+</footer>
+
+</body>
+</html>
