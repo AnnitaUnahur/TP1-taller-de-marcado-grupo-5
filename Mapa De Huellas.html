@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es"></html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patitas Unidas - Unidas por aquellos que no tienen voz</title>
+</head>
+<body>
+    <header>
+        <h1> Mapa de Huellas - Patitas Unidas</h1>
+    </header>
+    <nav>
+
+        <!-- ACA VAN LAS RUTAS CUANDO UNAMOS-->
+    </nav>
+
+    <main>
+        <section>
+        <h2>Tu información puede salvar vidas</h2>
+        <hr>
+        <p>Mapa de Huellas es un proyecto que permite a las personas informar sobre animales
+            que se encuentren en situación de abandono, maltratados o heridos. No dudes en informar</p>
+        <p><strong>Comunicate con nostros</strong> </p>
+        
+        <form>
+            <label for="nombre"><strong>Nombre completo:</strong></label>
+            <input type="text" id="nombre" name="nombre">
+            <br>
+            <br>
+
+            <label for="email"><strong>Correo electrónico:</strong></label>
+            <input type="email" id="email" name="email">
+                                                                                             <!--formulario simple-->
+            <br>
+            <br>
+            <label for="Lugar"><strong>Lugar visto</strong></label>
+            <input type="text" id="Lugar" name="Lugar">
+            <br>
+            <br>
+            <iframe            
+                 src="https://www.google.com/maps?q=Buenos+Aires&output=embed"
+                 width="400" 
+                 height="250"                                                       
+                 style="border:0;" 
+                 loading="lazy">
+            </iframe>
+            <p>Mapa De Orientación</p>                       
+                                                                                    <!--Mapa interactivo-->
+
+            <br>
+            <br>
+
+
+            <label for="Horario"><strong>Fecha y Horario</strong></label>
+            <input type="datetime-local" id="Horario" name="Horario">
+            <hr>
+            <br>
+                <fieldset>
+                    <legend><b>Animalito</b></legend>
+                    <label><input type="radio" name="Animalito" value="Animalito"> Perro</label>
+                    <label><input type="radio" name="Animalito" value="Animalito"> Gato</label>     <!--cuadros selectores (solo uno)-->
+                    <label><input type="radio" name="Animalito" value="Animalito"> Otro</label>
+                </fieldset>
+                <br>
+                <hr>
+                <br>
+                <fieldset>
+                    <legend><b>Situación</b></legend>
+                    <label><input type="checkbox" name="Situación" value="Abandono"> Abandono</label>
+                    <label><input type="checkbox" name="Situación" value="Herido"> Herido</label>       <!--radios de multiopcion-->
+                    <label><input type="checkbox" name="Situación" value="Maltrato"> Maltrato</label>
+                    <label><input type="checkbox" name="Situación" value="Otro"> Otro</label>
+                </fieldset>
+
+                <br>
+
+                <label for="detalles"><strong>Detalles puntuales:</strong></label>
+                <textarea id="detalles" name="detalles" rows="6"                            
+                    placeholder="Describe tu animalito aquí...(raza, color)"></textarea>     <!--cuadro para comentarios-->
+
+                <button type="submit">Enviar</button>
+        </form>
+                <br>
+                <br>
+                <hr>
+            <h2>Mapa de Huellas es gracias a Ustedes</h2>
+            <section id="rescatados">                                
+                <h3>Algunas de nuestras huellas rescatadas</h3>     <!-- Caretelera de imagenes-->
+                <div class="slider-container">
+                    <div class="galeria-scroll" id="rescatados-scroll"></div>
+                        <img src="../imagenes/Tito rescatado.webp" alt="Tito"><p>TITO</p>
+                        <img src="../imagenes/michina.jpg" alt="Michina"><p>Michina</p>
+                        <img src="../imagenes/olivia.jfif" alt="olivia"><p>olivia</p>
+                        <img src="../imagenes/caramelo.jfif" alt="Caramelo"><p>Caramelo</p>
+                        <img src="../imagenes/thor.jpg" alt="Thor"><p>Thor</p>
+                </div>
+                <p><strong></strong></p>
+        </section>
+        
+    </main> 
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <span class="footer-icon">✉</span>
+                <h3>Contáctanos</h3>
+                <p>Puedes escribirnos a <br> <strong>patitasunidas@gmail.com</strong></p>
+                <p>Escríbenos para cualquier consulta sobre adopciones o donaciones.</p>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2026 por Patitas Unidas.
+        </div>
+    </footer>
+</body>
