@@ -84,6 +84,36 @@
 
                 <button type="submit">Enviar</button>
         </form>
+        <!-- FORMULARIO DE PARTICIPAR DE PROGRAMAS -->
+        <section id="participar">
+            <h2>Formulario de participación</h2>
+            <p>Completá tus datos y seleccioná el programa de tu interés:</p>
+            
+            <form action="/enviar" method="post">
+                <label for="nombre">Nombre</label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                <br><br>
+
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" placeholder="Tu email" required>
+                <br><br>
+
+                <label for="programa">Programa</label><br>
+                <select id="programa" name="programa">
+                    <option value="">Elegir...</option>
+                    <option value="adopcion">Adopción Responsable</option>
+                    <option value="castracion">Castraciones Gratuitas</option>
+                    <option value="colecta">Colectas Solidarias</option>
+                </select>
+                <br><br>
+
+                <label for="mensaje">Mensaje</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                <br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
                 <br>
                 <br>
                 <hr>
