@@ -26,7 +26,12 @@ body {
 
 /*Header, navegación (incluyendo :hover) y footer*/
 
-
+header {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .navbar {
     background-color: white;
     padding: 15px 50px;
@@ -39,10 +44,7 @@ body {
     z-index: 1000;
 }
 
-.navbar img {
-    height: 80px;
-    width: auto;
-}
+
 
 .nav-links {
     display: flex;
@@ -61,6 +63,28 @@ body {
     color: #007BFF;
     border-bottom: 2px solid #007BFF;
 }
+
+footer {
+    background-color: #4b2c20;
+    color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 30px;
+}
+
+
+footer .copyright {
+    margin-top: 50px;
+    font-size: 0.85rem;
+    opacity: 0.7;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+}
+
+
 /*Secciones de contenido (section, article, headings, párrafos)*/
 .main-container {
     max-width: 1100px;
@@ -72,12 +96,6 @@ body {
     min-height: 100vh;
 }
 
-header {
-    margin-bottom: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 .logo-central {
     width: 280px;
@@ -131,6 +149,16 @@ section {
     border-radius: 10px;
 }
 
+/*Tabla, formulario y estilos de imágenes*/
+.navbar img {
+    height: 80px;
+    width: auto;
+}
+.logo-central {
+    width: 280px;
+    height: auto;
+    margin: 20px 0;
+}
 .galeria-scroll img {
     width: 250px;
     height: 250px;
@@ -138,7 +166,6 @@ section {
     border-radius: 10px;
     flex-shrink: 0;
 }
-/*Tabla, formulario y estilos de imágenes*/
 .imgGaleria {
   width: 250px;
   height: auto;
@@ -168,18 +195,6 @@ section {
   100% { opacity: 1; }
 }
 
-
-footer {
-    background-color: #4b2c20;
-    color: #ffffff;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-footer p {
-    margin-bottom: 30px;
-}
-
 footer table {
     width: 100%;
     max-width: 800px;
@@ -197,12 +212,4 @@ footer table td a {
     color: #ffcc00;
     text-decoration: underline;
     font-weight: bold;
-}
-
-footer .copyright {
-    margin-top: 50px;
-    font-size: 0.85rem;
-    opacity: 0.7;
-    border-top: 1px solid rgba(255,255,255,0.1);
-    padding-top: 20px;
 }
