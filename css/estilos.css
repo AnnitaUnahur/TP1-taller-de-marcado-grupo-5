@@ -1,19 +1,30 @@
-body {
+/*Variables CSS, reset, tipografía global y estilos del body*/
+:root {
+    --color-texto: #333;
+    --color-fondo: #f0f0f0;
+    --color-footer: #4b2c20;
+    --color-acento: #007BFF;
+}
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f0f0f0;
     background-image: url('fondos/fondo.png');
+    background-image: url('../IMG/huesitos.avif');
     background-attachment: fixed;
     background-repeat: repeat;
 }
-body {
-  background-image: url(../IMG/huesitos.avif);
-  background-attachment: fixed;
-  background-repeat: repeat;
-}
+
+/*Header, navegación (incluyendo :hover) y footer*/
 
 
 .navbar {
@@ -50,7 +61,7 @@ body {
     color: #007BFF;
     border-bottom: 2px solid #007BFF;
 }
-
+/*Secciones de contenido (section, article, headings, párrafos)*/
 .main-container {
     max-width: 1100px;
     margin: 20px auto;
@@ -127,6 +138,7 @@ section {
     border-radius: 10px;
     flex-shrink: 0;
 }
+/*Tabla, formulario y estilos de imágenes*/
 .imgGaleria {
   width: 250px;
   height: auto;
