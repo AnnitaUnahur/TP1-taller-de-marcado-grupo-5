@@ -1,4 +1,3 @@
-/*Variables CSS, reset, tipografía global y estilos del body*/
 :root {
     --color-texto: #131212;
     --color-fondo: #4d4c4c;
@@ -178,7 +177,7 @@ section {
     color: #222222;
     font-size: 1.2rem;
     margin-bottom: 15px;
-    border-bottom: 2px solid #aeff6b; /* Una rayita decorativa bajo el título */
+    border-bottom: 2px solid #aeff6b; 
     padding-bottom: 5px;
 }
 .card:hover {
@@ -331,4 +330,27 @@ footer table td a {
     color: #ffcc00;
     text-decoration: underline;
     font-weight: bold;
+}
+
+.link-formulario-adopcion, 
+.link-formulario-voluntariado {
+    color: #007BFF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link-formulario-adopcion:hover, 
+.link-formulario-voluntariado:hover {
+    text-decoration: underline;
+}
+
+.volver-arriba {
+    margin-top: 25px;
+}
+
+.volver-arriba a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
 }
