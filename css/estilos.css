@@ -1,3 +1,4 @@
+/* VARIABLES*/
 :root {
     --color-texto: #131212;
     --color-fondo: #4d4c4c;
@@ -11,26 +12,45 @@
     box-sizing: border-box;
 }
 
-
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f0f0f0;
-    background-image: url('fondos/fondo.png');
     background-image: url('../Imagenes/imagenes_index/Fondos/Fondo.PNG');
     background-attachment: fixed;
     background-repeat: repeat;
 }
 
-/*Header, navegación (incluyendo :hover) y footer*/
+/*ESTRUCTURA */
+.main-container {
+    max-width: 1100px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    text-align: center;
+    min-height: 100vh;
+}
 
+section {
+    margin-bottom: 60px;
+}
+
+section h2 {
+    color: #2E7D32;
+    border-bottom: 2px solid #E0E0E0;
+    padding-bottom: 10px;
+}
+
+/* HEADER Y EL COSO */
 header {
     margin-bottom: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .navbar {
     background-color: white;
     padding: 15px 50px;
@@ -43,7 +63,10 @@ header {
     z-index: 1000;
 }
 
-
+.navbar img {
+    height: 80px;
+    width: auto;
+}
 
 .nav-links {
     display: flex;
@@ -63,69 +86,11 @@ header {
     border-bottom: 2px solid #007BFF;
 }
 
-footer {
-    background-color: #4b2c20;
-    color: #ffffff;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-footer p {
-    margin-bottom: 30px;
-}
-
-
-footer .copyright {
-    margin-top: 50px;
-    font-size: 0.85rem;
-    opacity: 0.7;
-    border-top: 1px solid rgba(255,255,255,0.1);
-    padding-top: 20px;
-}
-
-
-/*Secciones de contenido (section, article, headings, párrafos)*/
-.main-container {
-    max-width: 1100px;
-    margin: 20px auto;
-    background-color: white;
-    padding: 40px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.2);
-    text-align: center;
-    min-height: 100vh;
-}
-
-section h2 {
-    color: #2E7D32;
-    border-bottom: 2px solid #E0E0E0;
-    padding-bottom: 10px;
-}
-
+/* LOS LOGOS */
 .logo-central {
     width: 280px;
     height: auto;
     margin: 20px 0;
-}
-
-#emergencia {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-}
-
-#emergencia a {
-    background-color: red;
-    color: white;
-    padding: 20px 40px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 8px;
-    display: inline-block;
-    animation: titileo 1s infinite; 
-}
-
-section {
-    margin-bottom: 60px;
 }
 
 .slider-container {
@@ -154,9 +119,27 @@ section {
     border-radius: 10px;
 }
 
+.galeria-scroll img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.imgGaleria {
+    width: 250px;
+    height: auto;
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+    text-align: center; 
+    vertical-align: top; 
+    padding: 20px;
+}
+
 .flex-container {
     display: flex;
-    flex-wrap: wrap;       
+    flex-wrap: wrap;      
     justify-content: center; 
     gap: 40px;             
     padding: 20px;
@@ -171,8 +154,9 @@ section {
     border: 1px solid #f1f0f0;     
     border-radius: 10px;
     padding: 15px;
-    background-color: #ffffff
+    background-color: #ffffff;
 }
+
 .card h3 {
     color: #222222;
     font-size: 1.2rem;
@@ -180,6 +164,7 @@ section {
     border-bottom: 2px solid #aeff6b; 
     padding-bottom: 5px;
 }
+
 .card:hover {
     transform: scale(1.05); 
 }
@@ -193,8 +178,85 @@ section {
     margin-bottom: 15px;   
 }
 
-/*Tabla, formulario y estilos de imágenes*/
+/* BOTONES Y ENLACES*/
+#emergencia {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
 
+#emergencia a {
+    background-color: red;
+    color: white;
+    padding: 20px 40px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    display: inline-block;
+    animation: titileo 1s infinite; 
+}
+
+.boton-adoptame {
+    background-color: red; 
+    color: white; 
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase; 
+    padding: 12px 25px; 
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    animation: titileo 1s infinite; 
+}
+
+.boton-programa {
+    display: inline-block;      
+    background-color: #cc0f0f;   
+    color: white !important;     
+    padding: 14px 30px;          
+    font-size: 1.1rem;          
+    font-weight: bold;
+    text-decoration: none;       
+    border-radius: 6px;          
+    margin-top: 10px; 
+    animation: titileo 1s infinite;            
+}
+
+.link-formulario-adopcion {
+    color: #007BFF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link-formulario-adopcion:hover {
+    text-decoration: underline;
+}
+
+.link-formulario-voluntariado {
+    display: inline-block;
+    background-color: #2ecc71;
+    color: #ffffff;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.link-formulario-voluntariado:hover {
+    background-color: #27ae60;
+    color: #ffffff;
+}
+
+#btn-modo {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+/* FORMULARIOS */
 form {
     max-width: 700px;           
     margin: 40px auto;          
@@ -213,7 +275,6 @@ form label {
     color: #4a5568;
     margin-bottom: 8px;      
 }
-
 
 form input[type="text"]:focus,
 form input[type="email"]:focus,
@@ -254,63 +315,16 @@ form input[type="submit"]:hover {
     transform: translateY(-1px);
 }
 
-
-.navbar img {
-    height: 80px;
-    width: auto;
-}
-.logo-central {
-    width: 280px;
-    height: auto;
-    margin: 20px 0;
-}
-.galeria-scroll img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 10px;
-    flex-shrink: 0;
-}
-.imgGaleria {
-  width: 250px;
-  height: auto;
-  border-radius: 8px; 
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
-  text-align: center; 
-  vertical-align: top; 
-  padding: 20px;
+/* FOOTER Y TABLAS */
+footer {
+    background-color: #4b2c20;
+    color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
 }
 
-.boton-adoptame {
-  background-color: red; 
-  color: white; 
-  font-weight: bold;
-  font-style: italic;
-  text-transform: uppercase; 
-  padding: 12px 25px; 
-  border: none; 
-  border-radius: 8px; 
-  cursor: pointer; 
-  animation: titileo 1s infinite; 
-}
-.boton-programa {
-    display: inline-block;      
-    background-color: #cc0f0f;   
-    color: white !important;     
-    padding: 14px 30px;          
-    font-size: 1.1rem;           
-    font-weight: bold;
-    text-decoration: none;       
-    border-radius: 6px;          
-    margin-top: 10px; 
-     animation: titileo 1s infinite;            
-
-}
-
-@keyframes titileo {
-  0%   { opacity: 1; }
-  50%  { opacity: 0.5; }
-  100% { opacity: 1; }
+footer p {
+    margin-bottom: 30px;
 }
 
 footer table {
@@ -332,18 +346,6 @@ footer table td a {
     font-weight: bold;
 }
 
-.link-formulario-adopcion, 
-.link-formulario-voluntariado {
-    color: #007BFF;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.link-formulario-adopcion:hover, 
-.link-formulario-voluntariado:hover {
-    text-decoration: underline;
-}
-
 .volver-arriba {
     margin-top: 25px;
 }
@@ -353,4 +355,66 @@ footer table td a {
     text-decoration: none;
     font-weight: bold;
     font-size: 0.9rem;
+}
+
+footer .copyright {
+    margin-top: 50px;
+    font-size: 0.85rem;
+    opacity: 0.7;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+}
+
+/* MODO OSCURO */
+@keyframes titileo {
+    0%   { opacity: 1; }
+    50%  { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+body.dark-mode {
+    background-color: #1a1a1a;
+    background-image: none;
+    color: #ffffff;
+}
+
+.dark-mode .main-container,
+.dark-mode main,
+.dark-mode section,
+.dark-mode p,
+.dark-mode i,
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3 {
+    background-color: #242424;
+    color: #ffffff;
+}
+
+.dark-mode .navbar {
+    background-color: #242424;
+    border-bottom: 1px solid #444;
+}
+
+.dark-mode .nav-links a {
+    color: #ffffff;
+}
+
+.dark-mode footer,
+.dark-mode footer section {
+    background-color: #111111;
+    color: #ffffff;
+}
+
+.dark-mode footer a {
+    color: #38b6ff;
+}
+
+.dark-mode .link-formulario-voluntariado {
+    background-color: #a3e4d7;
+    color: #1a1a1a;
+}
+
+.dark-mode .link-formulario-voluntariado:hover {
+    background-color: #76d7c4;
+    color: #1a1a1a;
 }

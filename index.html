@@ -12,6 +12,8 @@
 </head>
 <body>
 
+    <button id="btn-modo" class="btn btn-outline-secondary">Oscuro</button>
+
     <div class="main-container">
         <header id="inicio">
             <h1>Patitas Unidas</h1>
@@ -29,7 +31,7 @@
             </nav>
         </header>
 
-        <main>
+        <main id="contenido-principal">
             <section id="emergencia">
                 <a href="https://wa.me/1160323719" target="_blank" rel="noopener noreferrer">
                     REPORTAR UNA EMERGENCIA <br>
@@ -37,12 +39,12 @@
                 </a>
             </section>
 
-            <section id="mision">
+            <section id="mision" class="p-3 rounded">
                 <h2>Nuestra Misión</h2>
-                <p><i>En Patitas Unidas estamos unidos por el deseo de que cada animalito tenga un hogar, una familia y un lugar feliz. Trabajamos para transformar el abandono en cuidado y compañía.</i></p>
+                <p><i>En Patitas Unidas estamos unidos por el deseo de que cada animalito tenga un hogar, una familia y un lugar feliz. Trabajamos para transformar el abandonment en cuidado y compañía.</i></p>
             </section>
 
-            <section id="impacto">
+            <section id="impacto" class="p-3 rounded">
                 <h2>Nuestro Impacto</h2>
                 <div class="slider-container">
                     <div class="galeria-scroll" id="impacto-scroll">
@@ -63,7 +65,7 @@
                 </div>
             </section>
 
-            <section id="adopciones">
+            <section id="adopciones" class="p-3 rounded">
                 <h2>Animales en adopción</h2>
                 <div class="slider-container">
                     <div class="galeria-scroll" id="adopcion-scroll">
@@ -86,7 +88,7 @@
                 </p>
             </section>
 
-            <section id="ayudar">
+            <section id="ayudar" class="p-3 rounded">
                 <h2>Cómo ayudar</h2>
                 <p>Alias: <strong>patitas.unidas</strong> | PayPal</p>
                 <p>Recibimos mantas, camitas y comida en nuestro Shelter Principal.</p>
@@ -128,7 +130,7 @@
             </table>
             
             <div class="volver-arriba">
-                <a href="#inicio">▲ Volver al inicio</a>
+                <a href="#inicio">Volver al inicio</a>
             </div>
 
             <div class="copyright">
@@ -138,5 +140,19 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        const boton = document.getElementById('btn-modo');
+        
+        boton.addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+            
+            if (document.body.classList.contains('dark-mode')) {
+                boton.textContent = 'Claro';
+            } else {
+                boton.textContent = 'Oscuro';
+            }
+        });
+    </script>
 </body>
 </html>
