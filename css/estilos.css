@@ -86,7 +86,6 @@ header {
     border-bottom: 2px solid #007BFF;
 }
 
-/* LOS LOGOS */
 .logo-central {
     width: 280px;
     height: auto;
@@ -374,29 +373,31 @@ footer .copyright {
 
 body.dark-mode {
     background-color: #1a1a1a;
-    background-image: none;
+    background-image: url('../Imagenes/imagenes_index/Fondos/fondo.oscuro.png');
+    background-attachment: fixed;
+    background-repeat: repeat;
     color: #ffffff;
 }
 
-.dark-mode .main-container,
-.dark-mode main,
+.dark-mode .main-container {
+    background-color: #242424;
+    color: #ffffff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
 .dark-mode section,
 .dark-mode p,
 .dark-mode i,
 .dark-mode h1,
 .dark-mode h2,
 .dark-mode h3 {
-    background-color: #242424;
+    background-color: transparent;
     color: #ffffff;
 }
 
 .dark-mode .navbar {
-    background-color: #242424;
+    background-color: #333333;
     border-bottom: 1px solid #444;
-}
-
-.dark-mode .nav-links a {
-    color: #ffffff;
 }
 
 .dark-mode footer,
@@ -405,16 +406,7 @@ body.dark-mode {
     color: #ffffff;
 }
 
-.dark-mode footer a {
-    color: #38b6ff;
-}
-
 .dark-mode .link-formulario-voluntariado {
     background-color: #a3e4d7;
-    color: #1a1a1a;
-}
-
-.dark-mode .link-formulario-voluntariado:hover {
-    background-color: #76d7c4;
     color: #1a1a1a;
 }
