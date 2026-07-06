@@ -18,3 +18,23 @@ if (boton) {
         boton.textContent = 'Claro';
     }
 }
+
+const botones = document.querySelectorAll(".btn-leer");
+
+botones.forEach(boton => {
+
+    boton.addEventListener("click", function(){
+
+        const descripcion = this.previousElementSibling;
+
+        descripcion.classList.toggle("expandida");
+
+        if(descripcion.classList.contains("expandida")){
+            this.textContent = "Leer menos";
+        }else{
+            this.textContent = "Leer más";
+        }
+
+    });
+
+});

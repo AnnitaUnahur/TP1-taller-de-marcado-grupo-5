@@ -168,8 +168,38 @@ section h2 {
     border-radius: 10px;
     align-content:flex-start;
 }
+.dark-mode .container-item{
+    box-shadow: 0 2px 5px rgb(78, 78, 78)
+}
 
+.descripcion{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; /* Mostrar solo 3 líneas */
+    overflow: hidden;
+}
 
+.descripcion.expandida{
+    -webkit-line-clamp: unset;
+    overflow: visible;
+}
+
+.btn-leer{
+    background-color: white;
+    color: var(--color-texto);
+    border: 2px var(--color-acento) solid;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgb(43, 43, 43)
+}
+
+/* Botón en modo oscuro */
+body.dark-mode .btn-leer{
+    background-color: #333;
+    color: white;
+    border: 2px solid white;
+    box-shadow: 0 2px 5px rgb(78, 78, 78)
+}
 
 
 .card {
@@ -224,6 +254,9 @@ table {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
     vertical-align: top; 
     padding: 20px;
+}
+.dark-mode .imgGaleria{
+    box-shadow: 0 2px 5px rgb(78, 78, 78)
 }
 
 .card img {
@@ -282,8 +315,9 @@ table {
     top: 20px;
     right: 20px;
     z-index: 9999;
-    padding: 10px 20px;
+    padding: 8px 15px;
     cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 form {
