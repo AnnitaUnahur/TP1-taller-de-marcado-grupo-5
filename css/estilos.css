@@ -419,3 +419,39 @@ body.dark-mode {
 .logo-invisible {
     display: none;
 }
+/* Acordeón preguntas frecuentes */
+.preguntas {
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.pregunta {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    background-color: #368ae4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+.respuesta {
+    display: none;
+    padding: 15px;
+    background-color: #f1f1f1;
+    color: #333;
+    border-radius: 0 0 8px 8px;
+}
+
+/* Acordeón modo oscuro */
+.dark-mode .pregunta {
+    background-color: #555;
+    color: white;
+}
+
+.dark-mode .respuesta {
+    background-color: #222;
+    color: white;
+}

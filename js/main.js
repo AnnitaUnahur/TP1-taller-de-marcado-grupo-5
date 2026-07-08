@@ -38,3 +38,20 @@ botones.forEach(boton => {
     });
 
 });
+const preguntas = document.querySelectorAll(".pregunta");
+
+preguntas.forEach(function(pregunta){
+
+    pregunta.addEventListener("click", function(){
+
+        const respuesta = this.nextElementSibling;
+
+        if(respuesta.style.display === "block"){
+            respuesta.style.display = "none";
+        } else {
+            respuesta.style.display = "block";
+        }
+
+    });
+
+});
