@@ -399,3 +399,23 @@ body.dark-mode {
     background-color: #a3e4d7;
     color: #1a1a1a;
 }
+/* Cards en modo oscuro */
+.dark-mode .card {
+    background-color: #333333;
+    color: white;
+    border: 1px solid #555;
+}
+
+.dark-mode .card h3 {
+    color: white;
+}
+
+.dark-mode .card p,
+.dark-mode .card li,
+.dark-mode .card strong {
+    color: white;
+}
+/* Ocultar navbar-brand pero mantener Bootstrap */
+.logo-invisible {
+    display: none;
+}
